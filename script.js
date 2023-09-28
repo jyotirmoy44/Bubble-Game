@@ -34,7 +34,7 @@ function runTimer() {
         }
         else {
             clearInterval(timerInterval);
-            document.querySelector("#pBottom").innerHTML = `<h1>Game Over</h1>`;
+            document.querySelector("#pBottom").innerHTML = `<h1 style="background-color: red;">Game Over</h1>`;
         }
         
     }, 1000);
@@ -52,4 +52,3 @@ document.querySelector("#pBottom").addEventListener("click", function(details) {
 newHit();
 runTimer();
 makeBubble();
-newScore();
